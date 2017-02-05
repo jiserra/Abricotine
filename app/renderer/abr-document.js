@@ -13,6 +13,7 @@ var remote = require("electron").remote,
     imageImport = require.main.require("./image-import.js"),
     IpcClient = require.main.require("./ipc-client.js"),
     exportHtml = require.main.require("./export-html.js"),
+    exportFtp = require.main.require("./export-ftp.js"),
     files = remote.require("./files.js"),
     loadTheme = require.main.require("./load-theme.js"),
     parsePath = require("parse-filepath"),
@@ -380,6 +381,17 @@ AbrDocument.prototype = {
             if (err) {
                 return dialogs.fileAccessDenied(path, function () {
                     that.exportHtml(template);
+                });
+            }
+        });
+    },
+
+    exportFtp: function (template) {
+        var that = this;
+        exportFtp(this, template, null, function (err, path) {
+            if (err) {
+                return dialogs.fileAccessDenied(path, function () {
+                    that.exportFtp(template);
                 });
             }
         });

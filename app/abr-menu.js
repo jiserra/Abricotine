@@ -50,6 +50,9 @@ function preprocessTemplate (abrApp, element, config, abrWin) {
                 if (item.id === "exportHtml") {
                     item.submenu = assetsMenuGenerator(item.submenu, constants.path.templatesDir, "template.json", "exportHtml");
                 }
+                if (item.id === "exportFtp") {
+                    item.submenu = assetsMenuGenerator(item.submenu, constants.path.templatesDir, "template.json", "exportFtp");
+                }
                 if (item.id === "themes") {
                     var checkId = getConfig(config, "theme");
                     item.submenu = assetsMenuGenerator(item.submenu, constants.path.themesDir, "theme.json", "loadTheme", "radio", checkId);

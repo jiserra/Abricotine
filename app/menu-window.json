@@ -90,6 +90,11 @@
                 "submenu": []
             },
             {
+                "label": "Export FTP",
+                "id": "exportFtp",
+                "submenu": []
+            },
+            {
                 "type": "separator"
             },
             {

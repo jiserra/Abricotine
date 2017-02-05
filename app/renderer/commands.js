@@ -34,6 +34,10 @@ var commands = {
         abrDoc.exportHtml(param);
     },
 
+    exportFtp: function(win, abrDoc, cm, param) {
+        abrDoc.exportFtp(param);
+    },
+
     close: function(win, abrDoc, cm) {
         abrDoc.close();
     },
