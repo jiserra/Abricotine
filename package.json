@@ -39,6 +39,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "electron-window-state": "^3.0.3",
     "font-awesome": "^4.5.0",
+    "ftp": "^0.3.10",
     "glob": "^5.0.14",
     "is-url": "^1.2.1",
     "jquery": "^2.2.4",
