@@ -135,6 +135,15 @@ var appDialogs = {
             message: "Document images have been copied in the '" + path + "' directory.",
             buttons: ['OK']
         });
+    },
+
+    ftpFileDone: function (finalname, win) {
+        win = getWindow(win);
+        dialog.showMessageBox(win, {
+            title: "Web file export",
+            message: "The file was uploaded. You can find it at:\n\nhttp://cozmicgroup.com/clients/proposal/" + finalname,
+            buttons: ["OK"]
+        });
     }
 };
 
