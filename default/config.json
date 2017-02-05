@@ -25,5 +25,11 @@
     "theme": "default",
     "window": {
         "showMenuBar": true
+    },
+    "ftp": {
+      "ftpPath": "/path/to/ftp/folder",
+      "host": "ftphost.com",
+      "user": "ftpuser",
+      "password":  "ftppassword"
     }
 }
